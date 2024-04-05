@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Enrollment Form</title>
+        <style>
+            body{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            div{
+                background-color: lightgray;
+                width: 450px;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px gray;
+            }
+            input,textarea,select{
+                border: none;
+                font-size: 20px;
+                margin: 5px;
+                border-radius: 3px;
+            }
+            .button{
+                background-color: black;
+                color: white;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h2>Job Enrollment</h2>
+        <form>
+            <label>username</label><br>
+            <input type="text" placeholder="username"><br>
+            <label>Password</label><br>
+            <input type="password" placeholder="password"><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="Email"><br>
+            <label>About Yourself</label><br>
+            <textarea rows="3" cols="25" placeholder="Bio"></textarea><br>
+            <label>Designation</label><br>
+            <select>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Techlead">Tech lead</option>
+                <option value="Consultant">Consultant</option>
+            </select><br>
+            <label>DOB</label><br>
+            <input type="date" placeholder="DOB"><br>
+            <label>Image</label><br>
+            <input type="file" placeholder="upload an Image"><br>
+            <label>Mobile number</label><br>
+            <input type="number" placeholder="Mobile number"><br>
+            <label>Programming level</label><br>
+            <input type="checkbox" value="beginner">Beginner
+            <input type="checkbox" value="intermediate">Intermediate
+            <input type="checkbox" value="Expert">Expert<br>
+            <label>Expertise in</label><br>
+            <input type="radio" name="Expertise" value="frontend">frontend
+            <input type="radio" name="Expertise" value="backend">backend
+            <input type="radio" name="Expertise" value="full stack">full stack<br>
+            <label>Website URL</label><br>
+            <input type="url" placeholder="Your Website"><br>
+            <input class="button" type="submit" value="Enroll">
+            <input class="button" type="reset" value="Reset"><br>
+        </form>
+        </div>
+    </body>
+</html>
